@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  DONE
+}
+
+model Team {
+  id        String   @id @default(uuid())
+  name      String   @db.VarChar(120)
+  color     String   @db.VarChar(7)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  tasks     Task[]   @relation("TaskTeams")
+
+  @@index([name])
+  @@index([createdAt])
+}
+
+model Task {
+  id          String     @id @default(uuid())
+  title       String
+  description String
+  status      TaskStatus @default(PENDING)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  teams       Team[]     @relation("TaskTeams")
+
+  @@index([status])
+  @@index([title])
+  @@index([createdAt])
+}
