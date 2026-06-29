@@ -3,7 +3,8 @@
 
 Aplicação **full stack** para gerenciamento de tarefas dentro de times.
 
-O sistema permite criar, listar, editar e excluir times e tarefas. Cada tarefa pode ser associada a um ou mais times e possui controle de status.
+O sistema permite criar, listar, editar e excluir times e tarefas. Cada tarefa pode ser associada a um ou mais times
+e possui controle de status.
 
 ---
 
@@ -16,7 +17,8 @@ O sistema permite criar, listar, editar e excluir times e tarefas. Cada tarefa p
 | Banco de dados | SQL | PostgreSQL |
 | Testes | Jest e Supertest |
 
-**Aplicativo mobile:** validado funcionalmente no Android Emulator nos fluxos de criação, edição, exclusão e listagem de times e tarefas.
+**Aplicativo mobile:** validado funcionalmente no Android Emulator nos fluxos de criação, edição, exclusão e listagem de
+times e tarefas.
 
 > O backend é uma API REST construída em **Node.js + TypeScript + NestJS**.  
 > O aplicativo é desenvolvido em **React Native + TypeScript + Expo**.
