@@ -3,8 +3,8 @@
 
 Aplicação **full stack** para gerenciamento de tarefas dentro de times.
 
-O sistema permite criar, listar, editar e excluir times e tarefas. Cada tarefa pode ser associada a um ou mais times
-e possui controle de status.
+O sistema permite criar, listar, editar e excluir times e tarefas. Cada tarefa pode ser associada
+a um ou mais timese possui controle de status.
 
 ---
 
@@ -12,13 +12,15 @@ e possui controle de status.
 
 | Camada | Linguagem | Tecnologias utilizadas |
 |---|---|---|
-| Backend | TypeScript / Node.js | NestJS, Prisma ORM, PostgreSQL, Swagger, class-validator, Jest e Supertest |
-| Aplicativo mobile | TypeScript | React Native, Expo, React Navigation, Redux, Redux-Saga, Axios e Styled Components |
+| Backend | TypeScript / Node.js | NestJS, Prisma ORM, PostgreSQL, Swagger, class-validator,
+Jest e Supertest |
+| Aplicativo mobile | TypeScript | React Native, Expo, React Navigation, Redux, Redux-Saga,
+Axios e Styled Components |
 | Banco de dados | SQL | PostgreSQL |
 | Testes | Jest e Supertest |
 
-**Aplicativo mobile:** validado funcionalmente no Android Emulator nos fluxos de criação, edição, exclusão e listagem de
-times e tarefas.
+**Aplicativo mobile:** validado funcionalmente no Android Emulator nos fluxos de criação, edição,
+exclusão e listagem de times e tarefas.
 
 > O backend é uma API REST construída em **Node.js + TypeScript + NestJS**.  
 > O aplicativo é desenvolvido em **React Native + TypeScript + Expo**.
